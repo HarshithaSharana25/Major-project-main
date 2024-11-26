@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block content %}
+<div class="para">
+    <img src="/static/graphs/posture_analysis.png" 
+         alt="Posture Analysis Graphs" 
+         style="max-width: 80%; height: auto; margin: 20px 0; background-color: white; padding: 20px; border-radius: 10px;">
+</div>
+<div class="hi">
+    <h2>Analysis Summary</h2>
+    <p>The graphs above show:</p>
+    <p>Left Graph: Your torso angle variation over time
+       <br>- Blue line shows your measured angle
+       <br>- Red dotted line shows the threshold for good posture
+    </p>
+    <p>Right Graph: Bad posture instances
+       <br>- Each bar at height 1 indicates moments of poor posture
+       <br>- Bars at 0 indicate good posture
+    </p>
+</div>
+
+<div class="hey">
+    <p>Keep practicing good posture! Remember to:</p>
+    <p>✓ Keep your back straight</p>
+    <p>✓ Keep your shoulders relaxed</p>
+    <p>✓ Position your screen at eye level</p>
+</div>
+{% endblock %}
